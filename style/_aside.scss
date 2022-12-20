@@ -1,0 +1,92 @@
+@import '_vars.scss';
+.aside {
+
+    &__person-card {
+
+        &__img {
+            position: absolute;
+        }
+
+        &__img-dimon {
+            position: relative;
+            left: 85px;
+            top: 111px;
+            margin-bottom: 66px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        &__title {
+            @include roboto(400, 18);
+            color: white;
+            margin-top: 66px;
+            text-align: center;
+        }
+
+        &__about-person {
+            margin-top: 2.84px;
+            @include roboto(300, 14);
+            color: #DEDEDE;
+            text-align: center;
+        }
+
+        &__messengers {
+            // margin: 0 auto;
+        }
+    }
+
+    &__about {
+        padding: 12.32px 25px;
+        @include roboto(400, 12);
+        color: #FFFFFF;
+    }
+
+}
+
+.links-aside {
+    display: flex;
+    justify-content: space-around;
+    
+    &__link {
+        @include roboto(500, 12);
+        line-height: 14px;
+        display: block;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-align: center;
+
+        &__blue {
+            background: #3137C9;
+            box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+        }
+
+        &__red {
+            background-color: #ED3024;
+            box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+        }
+    }
+}
+
+.messenger {
+
+    &__vk {}
+
+    &__inst {
+        background: url('../image/inst-back.png');
+    }
+
+    &__ppp {}
+}
+
+@media screen and(max-width: 320px) {
+    aside{
+        display: none;
+        
+    }
+}

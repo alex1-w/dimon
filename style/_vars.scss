@@ -1,0 +1,13 @@
+@mixin roboto($fw, $fz) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $fw;
+    font-size: $fz+px;
+    color: #fff;
+}
+
+@mixin lato($fw, $fz) {
+    font-family: 'Lato', sans-serif;
+    font-weight: $fw;
+    font-size: $fz+px;
+    color: #fff;
+}

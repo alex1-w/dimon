@@ -1,0 +1,138 @@
+.main {
+    grid-area: main;
+}
+
+.post {
+    margin-left: 15;
+    width: 600px;
+    height: 1478px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    // position: relative;
+    background: #202020;
+    margin-top: 30px;
+    border-radius: 5px;
+
+
+    &__header {
+        display: flex;
+        // gap: 367px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__link {
+
+            @include roboto(400, 12);
+            opacity: 0.6;
+            background: #202020;
+        }
+
+        &__btn {
+            @include roboto(400, 12);
+            opacity: 0.6;
+            background: #202020;
+            margin-right: 30px;
+            position: relative;
+        }
+
+        &__btn::after {
+            content: url('../image/share.png');
+            position: absolute;
+            // width: 25px;
+            // height: 25px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 5px;
+            top: -8px;
+            right: -28px;
+
+
+
+        }
+    }
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        &__title-post {
+            @include roboto(500, 18);
+        }
+    }
+
+    &__content {
+        &__text {
+            margin-top: 25px;
+            @include roboto(400, 12);
+            line-height: 21px;
+        }
+    }
+}
+
+.bottom-content {
+
+    &__info {}
+}
+
+.posts-block {
+    height: 192px;
+    border-top: 1px solid #1C1C1C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__block {}
+}
+
+.posts {
+    display: grid;
+    grid-template: 19px 35px 35px / 263px 263px;
+    grid-template-areas:
+        "ah ah"
+        "b-1 b-2"
+        "b-3 b-4"
+    ;
+
+
+    &__title {
+        &__content {
+            @include roboto(500, 16);
+        }
+    }
+
+    &__block {
+        @include roboto(500, 14);
+        color: #F3EBA2;
+    }
+
+    &__data {
+        @include roboto(400, 12);
+    }
+}
+
+.discuss {
+
+    &__comment {}
+}
+
+.comments {}
+
+.block-a {
+    grid-area: 'ah';
+}
+
+.block-one {
+    grid-area: 'b-1';
+}
+
+.block-two {
+    grid-area: 'b-2';
+}
+
+.block-three {
+    grid-area: 'b-3';
+}
+
+.block-four {
+    grid-area: 'b-5 ';
+}
